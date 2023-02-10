@@ -62,7 +62,7 @@ p {
   padding-bottom: 94px;
 }
 
-.list {
+.global-list {
   list-style: none;
 }
 
@@ -91,16 +91,16 @@ textarea {
 
 /* Header */
 
-.page-header {
+.header {
+  outline: var(--header-outline) solid 1px;
+}
+
+.navigation {
   display: flex;
   align-items: center;
 }
 
-.main-header {
-  outline: var(--header-outline) solid 1px;
-}
-
-.logo {
+.header-logo {
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
@@ -112,20 +112,20 @@ textarea {
   padding-bottom: 24.5px;
 }
 
-.logo .second-part {
+.header-logo--second-part {
   color: var(--text-main-color);
 }
 
-.navigation {
+.navigation-list {
   display: flex;
   margin-left: 93px;
 }
 
-.navigation .item:not(:last-child) {
+.navigation-list__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.navigation .nav-item {
+.navigation-list__link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.142;
@@ -139,17 +139,15 @@ textarea {
   transition-timing-function: var(--main-timing-function);
 }
 
-.navigation .nav-item:hover,
-.navigation .nav-item:focus,
-.navigation .nav-item.current,
-.address .address-item:hover,
-.address .address-item:focus,
-.footer li a:hover,
-.footer li a:focus {
+.navigation-list__link:hover,
+.navigation-list__link:focus,
+.navigation-list__link.current,
+.address-item:hover,
+.address-item:focus {
   color: var(--hover-button-color);
 }
 
-.addresses .address-item {
+.address-item {
   padding-top: 31.5px;
   padding-bottom: 31.5px;
   display: flex;
@@ -159,19 +157,19 @@ textarea {
   transition-timing-function: var(--main-timing-function);
 }
 
-.page-header .address {
+.header-address {
   margin-left: auto;
 }
 
-.page-header .addresses {
+.address-list {
   display: flex;
 }
 
-.page-header .addresses .item + .item {
+.address-list__item + .address-list__item {
   margin-left: 30px;
 }
 
-.address .address-item {
+.address-item {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.142;
@@ -181,16 +179,16 @@ textarea {
   font-style: normal;
 }
 
-.addresses .icon {
+.address-item__icon {
   margin-right: 10px;
   fill: currentColor;
 }
 
-.navigation .item {
+.navigation-list__item {
   position: relative;
 }
 
-.navigation .decoration.current::after {
+.navigation-list__decoration.current::after {
   position: absolute;
   bottom: -1px;
   content: '';
@@ -216,7 +214,7 @@ textarea {
   margin-right: auto;
 }
 
-.banner .text {
+.banner__text {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.363;
@@ -228,7 +226,7 @@ textarea {
   margin: 0 auto;
 }
 
-.banner .button-item {
+.banner_btn {
   width: 216px;
   height: 50px;
   display: flex;
@@ -251,15 +249,15 @@ textarea {
   transition-timing-function: var(--main-timing-function);
 }
 
-.banner .button-item:hover,
-.banner .button-item:focus {
+.banner_btn:hover,
+.banner_btn:focus {
   background: var(--secondary-hover-button-color);
   text-shadow: none;
 }
 
 /* Advantages */
 
-.advantages .slogan {
+.advantages__slogan {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.166;
@@ -268,20 +266,20 @@ textarea {
   color: var(--main-button-color);
 }
 
-.main-advantages {
+.advantages__list {
   display: flex;
   justify-content: space-between;
 }
 
-.main-advantages .item {
+.advantages-item {
   width: 270px;
 }
 
-.main-advantages .item + .item {
+.advantages-item + .advantages-item {
   margin-left: 30px;
 }
 
-.advantages .slogan-item {
+.advantages-item__slogan {
   padding-top: 30px;
   font-weight: 700;
   font-size: 14px;
@@ -291,7 +289,7 @@ textarea {
   color: var(--main-button-color);
 }
 
-.advantages .text {
+.advantages-item__description {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -299,7 +297,7 @@ textarea {
   margin-top: 10px;
 }
 
-.main-advantages .icon-block {
+.advantages-item__logo {
   width: 270px;
   height: 120px;
   display: flex;
@@ -464,7 +462,7 @@ textarea {
   margin-bottom: 50px;
 }
 
-.customers .logo-list {
+.customers .logos {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -519,6 +517,11 @@ textarea {
 
 .footer .item + .item {
   margin-top: 9px;
+}
+
+.footer li a:hover,
+.footer li a:focus {
+  color: var(--hover-button-color);
 }
 
 .footer .coordinates {

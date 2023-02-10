@@ -17,36 +17,42 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header class="main-header">
-      <nav class="container page-header">
-        <a class="logo" href="./">Web<span class="second-part">Studio</span></a>
-        <ul class="navigation list">
-          <li class="item">
-            <a class="nav-item current" href="index.html">Студія</a>
-            <div class="decoration current"></div>
+    <header class="header">
+      <nav class="container navigation">
+        <a class="header-logo" href="./"
+          >Web<span class="header-logo header-logo--second-part"
+            >Studio</span
+          ></a
+        >
+        <ul class="navigation-list global-list">
+          <li class="navigation-list__item">
+            <a class="navigation-list__link current" href="index.html"
+              >Студія</a
+            >
+            <div class="navigation-list__decoration current"></div>
           </li>
-          <li class="item">
-            <a class="nav-item" href="portfolio.html">Портфоліо</a>
-            <div class="decoration"></div>
+          <li class="navigation-list__item">
+            <a class="navigation-list__link" href="portfolio.html">Портфоліо</a>
+            <div class="navigation-list__decoration"></div>
           </li>
-          <li class="item">
-            <a class="nav-item" href="./">Контакти</a>
-            <div class="decoration"></div>
+          <li class="navigation-list__item">
+            <a class="navigation-list__link" href="./">Контакти</a>
+            <div class="navigation-list__decoration"></div>
           </li>
         </ul>
-        <address class="address">
-          <ul class="addresses list">
-            <li class="item">
+        <address class="header-address">
+          <ul class="address-list global-list">
+            <li class="address-list__item">
               <a class="address-item" href="mailto:info@devstudio.com"
-                ><svg class="icon" height="12" width="16">
+                ><svg class="address-item__icon" height="12" width="16">
                   <use href="./images/icons.svg#icon-envelope"></use>
                 </svg>
                 info@devstudio.com</a
               >
             </li>
-            <li class="item">
+            <li class="address-list__item">
               <a class="address-item" href="tel:+380961111111"
-                ><svg class="icon" height="16" width="10">
+                ><svg class="address-item__icon" height="16" width="10">
                   <use href="./images/icons.svg#icon-smartphone"></use>
                 </svg>
                 +38 096 111 11 11</a
@@ -60,8 +66,8 @@
     <main>
       <section class="banner">
         <div class="container">
-          <h1 class="text">ЕФЕКТІВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-          <button class="button-item" type="button" data-modal-open>
+          <h1 class="banner__text">ЕФЕКТІВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
+          <button class="banner_btn" type="button" data-modal-open>
             Замовити послугу
           </button>
         </div>
@@ -69,51 +75,51 @@
 
       <section class="advantages section">
         <div class="container">
-          <h2 class="slogan visually-hidden">Наші переваги</h2>
-          <ul class="main-advantages list">
-            <li class="item">
-              <div class="icon-block">
+          <h2 class="advantages__slogan visually-hidden">Наші переваги</h2>
+          <ul class="advantages__list global-list">
+            <li class="advantages-item">
+              <div class="advantages-item__logo">
                 <svg class="icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="slogan-item">УВАГА ДО ДЕТАЛЕЙ</h3>
-              <p class="text">
+              <h3 class="advantages-item__slogan">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="advantages-item__description">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
-            <li class="item">
-              <div class="icon-block">
+            <li class="advantages-item">
+              <div class="advantages-item__logo">
                 <svg class="icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="slogan-item">ПУНКТУАЛЬНІСТЬ</h3>
-              <p class="text">
+              <h3 class="advantages-item__slogan">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="advantages-item__description">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
             </li>
-            <li class="item">
-              <div class="icon-block">
+            <li class="advantages-item">
+              <div class="advantages-item__logo">
                 <svg class="icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="slogan-item">ПЛАНУВАННЯ</h3>
-              <p class="text">
+              <h3 class="advantages-item__slogan">ПЛАНУВАННЯ</h3>
+              <p class="advantages-item__description">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="item">
-              <div class="icon-block">
+            <li class="advantages-item">
+              <div class="advantages-item__logo">
                 <svg class="icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="slogan-item">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-              <p class="text">
+              <h3 class="advantages-item__slogan">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p class="advantages-item__description">
                 Значимість цих проблем настільки очевидна, що реалізація
                 планових завдань.
               </p>
@@ -125,7 +131,7 @@
       <section class="boxes section">
         <div class="container">
           <h2 class="slogan">Чим ми займаємося</h2>
-          <ul class="main-boxes list">
+          <ul class="main-boxes global-list">
             <li class="item">
               <img
                 class="image"
@@ -160,7 +166,7 @@
       <section class="team section">
         <div class="container">
           <h2 class="our-team">Наша команда</h2>
-          <ul class="main-team list">
+          <ul class="main-team global-list">
             <li class="item">
               <img src="images/person1.jpg" alt="Ihor" width="270" />
               <div class="info">
@@ -328,7 +334,7 @@
         <div class="container">
           <h2 class="slogan">Постійні клієнти</h2>
           <div class="customers-logo">
-            <ul class="logo-list list">
+            <ul class="logos global-list">
               <li class="item">
                 <a
                   class="link"
@@ -416,7 +422,7 @@
             >Web<span class="second-part">Studio</span></a
           >
           <address>
-            <ul class="footer-contacts list">
+            <ul class="footer-contacts global-list">
               <li class="item">
                 <a
                   class="coordinates"
