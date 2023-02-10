@@ -940,6 +940,10 @@ textarea {
   border-radius: 50%;
   border: 1px solid var(--buttons-shadow-main-color);
   color: var(--text-main-color);
+  -webkit-transition-duration: var(--main-duration-time);
+          transition-duration: var(--main-duration-time);
+  -webkit-transition-timing-function: var(--main-timing-function);
+          transition-timing-function: var(--main-timing-function);
 }
 .modal-btn:hover, .modal-btn:focus {
   fill: var(--hover-button-color);
